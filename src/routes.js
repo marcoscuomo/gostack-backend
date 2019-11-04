@@ -11,6 +11,7 @@ import FileController from './app/controllers/FileController';
 import ProviderController from './app/controllers/ProviderController';
 import AppointmentController from './app/controllers/AppointmentController';
 import ScheduleController from './app/controllers/ScheduleController';
+import NotificationsController from './app/controllers/NotificationsController';
 import authMiddleware from './app/middlewares/auth';
 import multerConfig from './config/multer';
 
@@ -27,6 +28,7 @@ routes.get('/provider', ProviderController.index);
 routes.post('/appointments', AppointmentController.store);
 routes.get('/appointments', AppointmentController.index);
 routes.get('/schedule', ScheduleController.index);
+routes.get('/notifications', NotificationsController.index);
 
 // Rota para teste
 // routes.get('/', async (req, res) => {
